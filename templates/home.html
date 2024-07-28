@@ -1,0 +1,52 @@
+{% extends "layout.html" %}
+
+{% block navbar %}
+<a class="nav-link active" href="/" >Home</a>
+<a class="nav-link" href="about">About</a>
+<a class="nav-link" href="projects">Tools</a>
+{% endblock navbar %}
+
+{% block content %}
+    <br>
+    <h1> Frog Tesseract </h1>
+    <p> Software and Game Developer </p>
+    <img src="{{url_for('static', filename='images/yes.png')}}"> 
+    <div class="container">
+        <div class="row">
+            
+            <div class="col-4">
+                <a href="projects">
+                <div class="card">
+                    
+                    <img src="{{abs_img}}" class="card-img-top" alt="project_img" >
+                
+                    <div class="card-body">
+                      <p class="card-text"><b>Abstract Path</b></p>
+                    </div>
+                </div>
+                </a>
+            </div>
+            <div class="col-4">
+                <div class="card">
+                    <img src="{{d3_img}}" class="card-img-top" alt="project_img">
+                    <div class="card-body">
+                        <p class="card-text"> <b>3D Renderer</b></p>
+                    </div>
+                    </div>
+            </div>
+            <div class="col-4">
+                <div class="card">
+                    <img src="{{part_img}}" class="card-img-top" alt="project_img">
+                    <div class="card-body">
+                      <p class="card-text"><b>Particle Editor</b></p>
+                    </div>
+                  </div>
+            </div>
+        </div> <!-- end row-->
+
+        </div>
+    </div>
+
+    
+{% endblock content %}
+
